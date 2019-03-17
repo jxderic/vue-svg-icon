@@ -1,17 +1,22 @@
 {
-  "name": "vue-svg-icon",
-  "version": "0.1.0",
+  "name": "vue-svg-icon-component",
+  "version": "0.2.0",
   "description": "the svg icon component",
-  "main": "lib/umd.min.js",
+  "main": "lib/svg-icon.umd.min.js",
   "private": false,
   "keyword": "svg icon vue",
   "author": "jxderic <eric4336355@gmail.com>",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jxderic/vue-svg-icon.git"
+  },
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name svg-icon --dest lib packages/index.js"
+    "lib": "vue-cli-service build --target lib --name svg-icon --dest lib packages/index.js",
+    "commitmsg": "commitlint -e $GIT_PARAMS"
   },
   "dependencies": {
     "vue": "^2.6.6",
@@ -26,9 +31,15 @@
     "babel-eslint": "^10.0.1",
     "eslint": "^5.8.0",
     "eslint-plugin-vue": "^5.0.0",
+    "husky": "^1.3.1",
     "node-sass": "^4.9.0",
     "sass-loader": "^7.1.0",
     "svg-sprite-loader": "^4.1.3",
     "vue-template-compiler": "^2.5.21"
+  },
+  "config": {
+    "commitizen": {
+      "path": "cz-customizable"
+    }
   }
 }
