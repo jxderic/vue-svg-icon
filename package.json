@@ -1,6 +1,6 @@
 {
   "name": "vue-svg-icon-component",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "the svg icon component",
   "main": "lib/svg-icon.umd.min.js",
   "private": false,
